@@ -1,0 +1,30 @@
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Contactos</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+ <!-- <a routerLink="/mapa">Ir a Mapa</a>
+  <ion-button (click)="navegarMapa()">Ir a Mapa</ion-button>
+  <ion-list>
+    <ion-item *ngFor="let Contactos of arr">
+      <ion-label (click)="pulsarNombre(Contactos)">{{Contactos}}</ion-label>
+    </ion-item>
+  </ion-list> -->
+
+  <!-- TAB BAR donde iran nuestras pestañas o elementos-->
+  <!-- Agregar los tab a los botones para darle la direccion hacia donde se dirige-->
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="listado">
+        <ion-label>Listados</ion-label>
+        <ion-icon name="list"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button tab="nuevo">
+        <ion-label>Nuevo</ion-label>
+        <ion-icon name="clipboard"></ion-icon>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-content>
